@@ -1,3 +1,7 @@
-img{
-    height: 400px;
+.img {
+  background-size: cover;
+}
+
+#portfolio {
+  max-width: 80%;
 }

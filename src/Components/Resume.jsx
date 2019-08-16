@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Container, Row, Col } from 'shards-react';
+import React, { Component } from "react";
+import { Container, Row, Col, Badge } from "shards-react";
 
 class Resume extends Component {
   render() {
@@ -8,61 +8,69 @@ class Resume extends Component {
       var skillmessage = data.skillmessage;
 
       var education = data.education.map(education => (
-        <div key={education.school} className="card items">
+        <div key={education.school} className="card items flex-col">
           <h3>{education.school}</h3>
-          <p >
+          <p>
             {education.degree}
             <span>&bull;</span>
-            <em >{education.graduated}</em>
+            <em>{education.graduated}</em>
           </p>
           <p>{education.description}</p>
         </div>
       ));
 
       var work = data.work.map(work => (
-        <div key={work.company}><h3>{work.company}</h3>
-          <p >
+        <div key={work.company} className="card items flex-col">
+          <h3>{work.company}</h3>
+          <p>
             {work.title}
             <span>&bull;</span>
-            <em >{work.years}</em>
+            <em>{work.years}</em>
           </p>
           <p>{work.description}</p>
         </div>
       ));
 
       var skills = data.skills.map(skills => {
-        var className = 'bar-expand ' + skills.name.toLowerCase();
-        return <li key={skills.name}><span style={{ width: skills.level }} className={className}></span><em>{skills.name}</em></li>
+        var className = "bar-expand " + skills.name.toLowerCase();
+        return (
+          <Badge key={skills.name}>
+            <span style={{ width: skills.level }} className={className} />
+            <em>{skills.name}</em>
+          </Badge>
+        );
       });
     }
 
     return (
+      //style={{ "max-width": "60%" }}
       <Container id="resume">
         <Row>
           <Col lg="3">
-            <h1><span>Education</span></h1>
+            <h1>
+              <span>Education</span>
+            </h1>
+          </Col>
+          <Col lg="9">{education}</Col>
+        </Row>
+        <Row>
+          <Col lg="3">
+            <h1>
+              <span>Work</span>
+            </h1>
           </Col>
           <Col lg="9">
-            {education}
-
+            <div>{work}</div>
           </Col>
-
         </Row>
-        <Row>
-
-          <h1><span>Work</span></h1>
+        <Row className="card items">
+          <h1>
+            <span>Skills</span>
+          </h1>
           <div>
-            {work}
-          </div>
-        </Row>
-        <Row>
-          <h1><span>Skills</span></h1>
-          <div >
             {skillmessage}
             <div>
-              <ul >
-                {skills}
-              </ul>
+              <ul>{skills}</ul>
             </div>
           </div>
         </Row>

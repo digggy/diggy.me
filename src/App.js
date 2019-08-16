@@ -1,40 +1,38 @@
-import React, { Component } from 'react';
-import ReactGA from 'react-ga';
-import $ from 'jquery';
+import React, { Component } from "react";
+import ReactGA from "react-ga";
+import $ from "jquery";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "shards-ui/dist/css/shards.min.css"
-import './App.css';
-import Header from './Components/Header.jsx';
-import Footer from './Components/Footer.jsx';
-import About from './Components/About.jsx';
-import Resume from './Components/Resume.jsx';
-import Contact from './Components/Contact.jsx';
-import Testimonials from './Components/Testimonials.jsx';
-import Portfolio from './Components/Portfolio.jsx';
+import "shards-ui/dist/css/shards.min.css";
+import "./App.css";
+import Header from "./Components/Header.jsx";
+import Footer from "./Components/Footer.jsx";
+import About from "./Components/About.jsx";
+import Resume from "./Components/Resume.jsx";
+import Contact from "./Components/Contact.jsx";
+import Testimonials from "./Components/Testimonials.jsx";
+import Portfolio from "./Components/Portfolio.jsx";
 
 class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      foo: 'bar',
+      foo: "bar",
       resumeData: {}
     };
 
-    ReactGA.initialize('UA-110570651-1');
+    ReactGA.initialize("UA-110570651-1");
     ReactGA.pageview(window.location.pathname);
-
   }
 
   getResumeData() {
     $.ajax({
-      url: '/resumeData.json',
-      dataType: 'json',
+      url: "/resumeData.json",
+      dataType: "json",
       cache: false,
-      success: function (data) {
+      success: function(data) {
         this.setState({ resumeData: data });
       }.bind(this),
-      error: function (xhr, status, err) {
+      error: function(xhr, status, err) {
         console.log(err);
         alert(err);
       }
