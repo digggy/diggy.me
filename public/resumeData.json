@@ -1,0 +1,170 @@
+{
+  "main": {
+    "name": "Digdarshan Kunwar",
+    "occupation": "Student",
+    "description": "I am a Computer Science major student at Jacobs University Bremen, passively looking for internship/job opportunities in Software and Web Development. I want to further develop my creative skills, technological expertise & innovative thoughts.",
+    "image": "profilepic.png",
+    "bio": "I am a Front End developer with industry experience building websites and web applications. I specialize in JavaScript and have professional experience working with Python and React. I also have experience working with Vue, Wordpress and Express.Js.",
+    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "kunwar.digdarshangmail.com",
+    "phone": "+49-15158335638",
+    "address": {
+      "street": "College Ring 3",
+      "city": "Bremen",
+      "state": "Bremen",
+      "zip": "29759"
+    },
+    "website": "diggy.me",
+    "resumedownload": "http://timbakerdev.com",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/digdarshan.kunwar",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/_dkunwar",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "google-plus",
+        "url": "http://googleplus.com/tbakerx",
+        "className": "fa fa-google-plus"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/digdarshankunwar/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/_dkunwar/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/digggy",
+        "className": "fa fa-github"
+      },
+      {
+        "name": "skype",
+        "url": "http://skype.com",
+        "className": "fa fa-skype"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "education": [
+      {
+        "school": " Jacobs University",
+        "degree": "BSc Computer Science",
+        "graduated": "2018 - Present",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      },
+      {
+        "school": "Budhanilkantha School",
+        "degree": "A-Levels",
+        "graduated": "September 2017",
+        "description": "Studied Physics, Chemistry & Further Mathematics (PCF)."
+      }
+    ],
+    "work": [
+      {
+        "company": "Contact Software GmbH",
+        "title": "Workingstudent - Software Developer",
+        "years": "June 2019 - Present",
+        "description": "Optimize marketing campaigns, email marketing, social media and display and search advertising. Gained marketing and business analysis knowledge. Responsible for developing, implementing and managing marketing campaigns that promote a company and its services."
+      },
+      {
+        "company": "Deep Web Solutions GmbH",
+        "title": "Intern Web Development",
+        "years": "Jan 2019 - February 2019",
+        "description": " Learned to develop general themes and plugins for CMS like Wordpress. \n Learned to the basics of Vue.js and Laravel."
+      },
+      {
+        "company": "Budhanilkantha Education Services",
+        "title": "Co-Founder / Digital Marketing Manager",
+        "years": "September 2017 - September 2018",
+        "description": "Optimize marketing campaigns, email marketing, social media and display and search advertising. Gained marketing and business analysis knowledge. Responsible for developing, implementing and managing marketing campaigns that promote a company and its services."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Git",
+        "level": "60%"
+      },
+      {
+        "name": "Illustrator",
+        "level": "55%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "50%"
+      },
+      {
+        "name": "CSS",
+        "level": "90%"
+      },
+      {
+        "name": "HTML5",
+        "level": "80%"
+      },
+      {
+        "name": "VueJs",
+        "level": "50%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "A Levels Guide",
+        "category": "Making it possible for anyone, anywhere to make their life better through access to education.",
+        "image": "alevels-guide-cover.jpg",
+        "url": "https://www.facebook.com/alevelguide/lo"
+      },
+      {
+        "title": "Budhanilkantha Education Services",
+        "category": "A institution that me along with my high school friends co-founded before enrolling to college.",
+        "image": "BES -logo.png",
+        "url": "https://bes-edu.com"
+      },
+      {
+        "title": "Original Thai Food",
+        "category": "Website I built for a restaurant I like in Thailand",
+        "image": "original-thai-food.jpg",
+        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title": "My Resume Website",
+        "category": "My React based resume website",
+        "image": "resume-website.jpg",
+        "url": "#"
+      },
+      {
+        "title": "Design Portfolio",
+        "category": "My Design Portfolio.",
+        "image": "smirkspace.jpg",
+        "url": "#"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+        "user": "Kareem Abdul Jabbar"
+      },
+      {
+        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Steve Wozniak... impersonator"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+body {
+    background: #f5f6f8;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: initial;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 40px 20px;
+
+}
+
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: .625rem;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1);
+}
+
+.profile-pic {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+}
