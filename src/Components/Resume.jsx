@@ -34,10 +34,12 @@ class Resume extends Component {
       var skills = data.skills.map(skills => {
         var className = "bar-expand " + skills.name.toLowerCase();
         return (
+          <React.Fragment>
           <Badge key={skills.name}>
             <span style={{ width: skills.level }} className={className} />
             <em>{skills.name}</em>
           </Badge>
+          </React.Fragment>
         );
       });
     }

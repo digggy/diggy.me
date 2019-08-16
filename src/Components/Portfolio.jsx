@@ -17,23 +17,27 @@ class Portfolio extends Component {
       var projects = data.projects.map(function(projects) {
         var projectImage = "images/portfolio/" + projects.image;
         return (
-          <Card style={{ maxWidth: "400px", margin: "0.5rem" }}>
+          <Card style={{ maxWidth: "350px", margin: "0.5rem" }}>
             <div key={projects.title} className="columns portfolio-item">
               <div className="item-wrap">
                 <a href={projects.url} title={projects.title}>
                   <div className="portfolio-item-meta">
-                    <CardHeader>
-                      {" "}
-                      <h5>{projects.title}</h5>{" "}
-                    </CardHeader>
+                  <CardHeader style={{'text-align':'center'}}> 🏆 Featured </CardHeader>
                     <img
                       alt={projects.title}
                       src={projectImage}
-                      style={{ maxWidth: "400px" }}
+                      style={{ maxWidth: "350px" }}
                       className={"img"}
                     />
-                    <CardFooter>
+                    <CardBody>
+                    <CardTitle style={{'height':'3rem'}}>
+                      {" "}
+                      {projects.title}{" "}
+                    </CardTitle>
                       <p>{projects.category}</p>
+                      <Button>Read more &rarr;</Button>
+                      </CardBody>
+                      <CardFooter>                    
                     </CardFooter>
                   </div>
                 </a>
@@ -44,27 +48,15 @@ class Portfolio extends Component {
       });
     }
 
-    <Card style={{ maxWidth: "300px" }}>
-      <CardHeader>Card header</CardHeader>
-      <CardImg src="https://place-hold.it/300x200" />
-      <CardBody>
-        <CardTitle>Lorem Ipsum</CardTitle>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <Button>Read more &rarr;</Button>
-      </CardBody>
-      <CardFooter>Card footer</CardFooter>
-    </Card>;
-
     return (
-      <Container id="portfolio">
-        <div className="row">
-          <div className="twelve columns collapsed">
-            <h1>Check Out Some of My Works.</h1>
-
-            <div className="flex-row">{projects}</div>
-          </div>
-        </div>
-      </Container>
+	<React.Fragment>
+		<h1 className="text-center mt-5 mb-5">Check Out Some of My Works</h1>
+			<Container id="portfolio">
+        		<div className="row">
+            		<div className="flex-row">{projects}</div>
+          		</div>
+      		</Container>
+      </React.Fragment>
     );
   }
 }
