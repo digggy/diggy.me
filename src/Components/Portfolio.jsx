@@ -22,11 +22,11 @@ class Portfolio extends Component {
               <div className="item-wrap">
                 <a href={projects.url} title={projects.title}>
                   <div className="portfolio-item-meta">
-                  <CardHeader style={{'text-align':'center'}}> 🏆 Featured </CardHeader>
+                  <CardHeader className ="browser-mockup" style={{'text-align':'right'}}> 🏆 Featured </CardHeader>
                     <img
                       alt={projects.title}
                       src={projectImage}
-                      style={{ maxWidth: "350px" }}
+                      style={{ maxWidth: "350px", height: "250px"}}
                       className={"img"}
                     />
                     <CardBody>
