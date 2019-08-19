@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Badge } from "shards-react";
+import InstaStory from './Mini-Components/InstaStory';
 
 class Resume extends Component {
   render() {
@@ -11,8 +12,10 @@ class Resume extends Component {
         <div key={education.school} className="card items flex-col">
           <Container>
             <Row>
-              <Col lg="1">ok</Col>
-              <Col lg="11">
+              <Col lg="2">
+              <InstaStory/>
+              </Col>
+              <Col lg="10">
                 <h3>{education.school}</h3>
                 <p>
                   {education.degree}
