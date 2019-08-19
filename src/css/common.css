@@ -23,9 +23,10 @@ body {
     0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12),
     0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
 }
+
 /*
 @brief
-Give a window effect to the the card 
+Give a window effect to the the card
 */
 /* .browser-mockup {
   border-top: 2em solid rgba(230, 230, 230, 0.7);
@@ -37,7 +38,7 @@ Give a window effect to the the card
 .browser-mockup:before {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
   /* top: -1.25em; */
   left: 1em;
   width: 0.5em;

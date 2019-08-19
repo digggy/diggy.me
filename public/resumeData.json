@@ -125,31 +125,46 @@
     "projects": [
       {
         "title": "A Levels Guide",
-        "category": "Making it possible for anyone, anywhere to make their life better through access to education.",
+        "category": {
+          "description": "Making it possible for anyone, anywhere to make their life better through access to education.",
+          "info": ""
+        },
         "image": "alevels-guide-cover.jpg",
         "url": "https://www.facebook.com/alevelguide/lo"
       },
       {
         "title": "Budhanilkantha Education Services",
-        "category": "A institution that me along with my high school friends co-founded before enrolling to college.",
+        "category": {
+          "description": "A institution that me along with my high school friends co-founded before enrolling to college.",
+          "info": ""
+        },
         "image": "BES -logo.png",
         "url": "https://bes-edu.com"
       },
       {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "original-thai-food.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "Bijay Pun Magar",
+        "category": {
+          "description": "A Wordpress blog website I built for my friend in Nepal.",
+          "info": "Deployed by Herokuapp."
+        },
+        "image": "website-blog.png",
+        "url": "http://bijaymagar17.com.np/"
       },
       {
         "title": "My Resume Website",
-        "category": "My React based resume website",
+        "category": {
+          "description": "My React based resume and portfolio website.",
+          "info": "Deployed by Herokuapp."
+        },
         "image": "resume-website.jpg",
         "url": "#"
       },
       {
         "title": "Design Portfolio",
-        "category": "My Design Portfolio.",
+        "category": {
+          "description": "My former works on graphics design using Adobe Suite.",
+          "info": "Provided by Google Drive."
+        },
         "image": "design-works.jpg",
         "url": "#"
       }

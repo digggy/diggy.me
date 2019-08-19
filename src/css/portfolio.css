@@ -1,5 +1,6 @@
 .img {
   background-size: cover;
+  -webkit-background-size: cover;
 }
 
 #portfolio {

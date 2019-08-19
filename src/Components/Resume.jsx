@@ -9,13 +9,20 @@ class Resume extends Component {
 
       var education = data.education.map(education => (
         <div key={education.school} className="card items flex-col">
-          <h3>{education.school}</h3>
-          <p>
-            {education.degree}
-            <span>&bull;</span>
-            <em>{education.graduated}</em>
-          </p>
-          <p>{education.description}</p>
+          <Container>
+            <Row>
+              <Col lg="1">ok</Col>
+              <Col lg="11">
+                <h3>{education.school}</h3>
+                <p>
+                  {education.degree}
+                  <span>&bull;</span>
+                  <em>{education.graduated}</em>
+                </p>
+                <p>{education.description}</p>
+              </Col>
+            </Row>
+          </Container>
         </div>
       ));
 
@@ -35,10 +42,10 @@ class Resume extends Component {
         var className = "bar-expand " + skills.name.toLowerCase();
         return (
           <React.Fragment>
-          <Badge key={skills.name}>
-            <span style={{ width: skills.level }} className={className} />
-            <em>{skills.name}</em>
-          </Badge>
+            <Badge key={skills.name}>
+              <span style={{ width: skills.level }} className={className} />
+              <em>{skills.name}</em>
+            </Badge>
           </React.Fragment>
         );
       });
@@ -46,17 +53,15 @@ class Resume extends Component {
 
     return (
       //style={{ "max-width": "60%" }}
-      <Container id="resume">
+      <Container id="resume" style={{ "max-width": "1250px" }}>
         <Row>
-          <Col lg="3">
-            <h1>
-              <span>Education</span>
-            </h1>
+          <Col lg="3" className="items-heading">
+            <h1>Education</h1>
           </Col>
           <Col lg="9">{education}</Col>
         </Row>
         <Row>
-          <Col lg="3">
+          <Col lg="3" className="items-heading">
             <h1>
               <span>Work</span>
             </h1>

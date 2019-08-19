@@ -17,9 +17,9 @@ class About extends Component {
     }
 
     return (
-      <Container>
+      <Container style={{ "max-width": "1400px" }}>
         <Row>
-          <div className="card flex-row">
+          <div className="card flex-row items ">
             <Col sm="12" md="4" lg="3">
               <img
                 src={profilepic}
