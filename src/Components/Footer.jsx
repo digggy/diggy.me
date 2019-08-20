@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+// import { runWaves } from "../js/waves.js";
 
 class Footer extends Component {
+  componentDidMount() {}
   render() {
     if (this.props.data) {
       var networks = this.props.data.social.map(function(network) {
@@ -17,19 +19,18 @@ class Footer extends Component {
     return (
       <footer>
         <div className="row">
-          <div className="twelve columns">
-            <ul className="social-links">{networks}</ul>
+          <div className="social-container">
+            <ul className="social-icons">{networks}</ul>
 
             <ul className="copyright">
-              <li>&copy; Copyright 2019 Digdarshan Kunwar</li>
-              <li>
-                Design by{" "}
-                <a title="Digdarshan Kunwar" href="">
-                  Digdarshan Kunwar
-                </a>
-              </li>
+              &copy; Copyright 2019 Digdarshan Kunwar | Design by{" "}
+              <a title="Digdarshan Kunwar" href="">
+                {" "}
+                Digdarshan Kunwar
+              </a>
             </ul>
           </div>
+          <canvas id="ooze" width="1920" height="888" />
           <div id="go-top">
             <a className="smoothscroll" title="Back to Top" href="#home">
               <i className="icon-up-open" />

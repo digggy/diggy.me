@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Badge } from "shards-react";
-import InstaStory from './Mini-Components/InstaStory';
+import InstaStory from "./Mini-Components/InstaStory";
 
 class Resume extends Component {
   render() {
@@ -13,7 +13,7 @@ class Resume extends Component {
           <Container>
             <Row>
               <Col lg="2">
-              <InstaStory/>
+                <InstaStory src={education.logo} />
               </Col>
               <Col lg="10">
                 <h3>{education.school}</h3>
@@ -31,13 +31,22 @@ class Resume extends Component {
 
       var work = data.work.map(work => (
         <div key={work.company} className="card items flex-col">
-          <h3>{work.company}</h3>
-          <p>
-            {work.title}
-            <span>&bull;</span>
-            <em>{work.years}</em>
-          </p>
-          <p>{work.description}</p>
+          <Container>
+            <Row>
+              <Col lg="2">
+                <InstaStory src={work.logo} />
+              </Col>
+              <Col>
+                <h3>{work.company}</h3>
+                <p>
+                  {work.title}
+                  <span>&bull;</span>
+                  <em>{work.years}</em>
+                </p>
+                <p>{work.description}</p>
+              </Col>
+            </Row>
+          </Container>
         </div>
       ));
 
