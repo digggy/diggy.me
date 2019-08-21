@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-expressions */
-export function runWaves() {
-  const Curves = (function() {
+export function runWaves(backgroundColor) {
+  const Curves = (function(backgroundColor) {
     function e(e, t) {
       (this.points = e), (this.color = t);
     }
@@ -8,7 +8,7 @@ export function runWaves() {
       (a.width = c),
         (a.height = u),
         e.appendChild(a),
-        (l.fillStyle = "#fff"),
+        (l.fillStyle = backgroundColor),
         i(),
         (window.onresize = function() {
           r();
@@ -94,7 +94,7 @@ export function runWaves() {
       startRender: i,
       stopRender: o
     };
-  })();
+  })(backgroundColor);
   // Curves
   Curves.init(document.body);
 }

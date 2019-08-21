@@ -3,7 +3,7 @@ import { runWaves } from "../js/waves.js";
 
 class Footer extends Component {
   componentDidMount() {
-    runWaves();
+    runWaves("#ffffff");
   }
   render() {
     if (this.props.data) {

@@ -1,3 +1,4 @@
+@import "./global/global.scss";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 .social-container {
   max-width: 600px;
@@ -34,7 +35,7 @@
   height: 60px;
   border-radius: 100%;
   display: block;
-  background: linear-gradient(45deg, #00b5f5, #0f83d6);
+  background: linear-gradient(45deg, $blue, $blueLighter);
   transition: all 265ms ease-out;
 }
 .social-icons a:hover:before {
