@@ -3,14 +3,14 @@ import ReactGA from "react-ga";
 import $ from "jquery";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
-import "./App.css";
-import Header from "./Components/Header.jsx";
-import Footer from "./Components/Footer.jsx";
-import About from "./Components/About.jsx";
-import Resume from "./Components/Resume.jsx";
-import Contact from "./Components/Contact.jsx";
-import Testimonials from "./Components/Testimonials.jsx";
-import Portfolio from "./Components/Portfolio.jsx";
+import "./App.scss";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import About from "./components/About.jsx";
+import Resume from "./components/Resume.jsx";
+import Contact from "./components/Contact.jsx";
+import Testimonials from "./components/Testimonials.jsx";
+import Portfolio from "./components/Portfolio.jsx";
 
 class App extends Component {
   constructor(props) {

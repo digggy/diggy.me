@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Badge } from "shards-react";
-import InstaStory from "./Mini-Components/InstaStory";
+import InstaStory from "./mini-components/InstaStory";
 
 class Resume extends Component {
   render() {

@@ -20,7 +20,7 @@ class Footer extends Component {
 
     return (
       <footer>
-      <canvas id="ooze" width="1920" height="888" />
+        <canvas id="my-wave" width="1920" height="888" />
         <div className="row" id="front-content">
           <div className="social-container">
             <ul className="social-icons">{networks}</ul>

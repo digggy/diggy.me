@@ -52,13 +52,13 @@
   transition: all 265ms ease-in;
 }
 
-#ooze{
+#my-wave {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
   bottom: -10%;
 }
-#front-content{
+#front-content {
   z-index: 1;
 }
