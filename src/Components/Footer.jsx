@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-// import { runWaves } from "../js/waves.js";
+import { runWaves } from "../js/waves.js";
 
 class Footer extends Component {
-  componentDidMount() {}
+  componentDidMount() {
+    runWaves();
+  }
   render() {
     if (this.props.data) {
       var networks = this.props.data.social.map(function(network) {
@@ -18,7 +20,8 @@ class Footer extends Component {
 
     return (
       <footer>
-        <div className="row">
+      <canvas id="ooze" width="1920" height="888" />
+        <div className="row" id="front-content">
           <div className="social-container">
             <ul className="social-icons">{networks}</ul>
 
@@ -30,7 +33,7 @@ class Footer extends Component {
               </a>
             </ul>
           </div>
-          <canvas id="ooze" width="1920" height="888" />
+
           <div id="go-top">
             <a className="smoothscroll" title="Back to Top" href="#home">
               <i className="icon-up-open" />

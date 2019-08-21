@@ -1,5 +1,4 @@
 export function runWaves() {
-  document.addEventListener("DOMContentLoaded", function() {
     const Curves = (function() {
       function e(e, t) {
         (this.points = e), (this.color = t);
@@ -8,7 +7,7 @@ export function runWaves() {
         (a.width = c),
           (a.height = u),
           e.appendChild(a),
-          (l.fillStyle = "#000000"),
+          (l.fillStyle = "#fff"),
           i(),
           (window.onresize = function() {
             r();
@@ -57,13 +56,13 @@ export function runWaves() {
             e.fill(),
             e.restore();
         }),
-        1)
+        document.body.contains(document.getElementById('ooze')))
       )
         var a = document.getElementById("ooze"),
           l = a.getContext("2d");
       var c = window.innerWidth,
         u = window.innerHeight,
-        d = ["#2f3030", "#5e6060", "#ecf0f1", "#8d9090", "#bcc0c0", "#ecf0f1"],
+        d = ["#1E60FF", "#1180FF", "#ecf0f1", "##1E90FF", "#bcc0c0", "#ecf0f1"],
         p = (function(t, n, i) {
           for (var o = [], r = 0; r < t; r += 1) {
             for (var s = [], a = 0, l = 0; l <= c + c / 4; l += i) {
@@ -95,6 +94,6 @@ export function runWaves() {
         stopRender: o
       };
     })();
+    // Curves 
     Curves.init(document.body);
-  });
 }
