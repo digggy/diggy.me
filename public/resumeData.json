@@ -4,6 +4,7 @@
     "occupation": "Student",
     "description": "I am a Computer Science major student at Jacobs University Bremen, passively looking for internship/job opportunities in Software and Web Development. I want to further develop my creative skills, technological expertise & innovative thoughts.",
     "image": "profilepic.png",
+    "tagline": "Werkstudent Software Developer",
     "bio": "I am a Front End developer with industry experience building websites and web applications. I specialize in JavaScript and have professional experience working with Python and React. I also have experience working with Vue, Wordpress and Express.Js.",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "kunwar.digdarshangmail.com",
@@ -12,7 +13,8 @@
       "street": "College Ring 3",
       "city": "Bremen",
       "state": "Bremen",
-      "zip": "29759"
+      "zip": "29759",
+      "country": "Germany"
     },
     "website": "diggy.me",
     "resumedownload": "http://timbakerdev.com",

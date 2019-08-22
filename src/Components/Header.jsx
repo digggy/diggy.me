@@ -1,65 +1,59 @@
 import React, { Component } from "react";
-
+import { Nav, NavItem, NavLink } from "shards-react";
 class Header extends Component {
   render() {
-    if (this.props.data) {
-      var name = this.props.data.name;
-      var occupation = this.props.data.occupation;
-      var description = this.props.data.description;
-      var city = this.props.data.address.city;
-      var networks = this.props.data.social.map(function (network) {
-        return (
-          <li key={network.name}>
-            <a href={network.url}>
-              <i className={network.className} />
-            </a>
-          </li>
-        );
-      });
+    const { data } = this.props;
+    if (data) {
+      var { name, occupation, description, tagline } = data;
+      var { city, country } = data.address;
     }
 
     return (
       <header>
-        <nav >
-          <ul>
-            <li className="current">
-              <a className="smoothscroll" href="#home">
+        <div className="header-selction">
+          <Nav fill className="nav-container">
+            <NavItem className="current">
+              <NavLink className="smoothscroll" href="#home">
                 Home
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#about">
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="smoothscroll" href="#about">
                 About
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#resume">
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="smoothscroll" href="#resume">
                 Resume
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#portfolio">
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="smoothscroll" href="#portfolio">
                 Works
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#testimonials">
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="smoothscroll" href="#testimonials">
                 Testimonials
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#contact">
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="smoothscroll" href="#contact">
                 Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </div>
         <div className="row banner">
-          <div className="banner-text">
-            <h1 className="responsive-headline">I'm {name}.</h1>
-            <hr />
-            <ul className="social">{networks}</ul>
+          <div className="header-section-inner">
+            <h1 className="responsive-headline">I'm {name}</h1>
+            <h2>
+              <strong>{tagline}</strong>
+              <br />
+              <div className="location">
+                @ {city},{country}
+              </div>
+            </h2>
           </div>
         </div>
 
