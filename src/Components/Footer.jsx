@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { runWaves } from "../js/waves.js";
+import Blob from "./mini-components/Blob";
 
 class Footer extends Component {
   componentDidMount() {
@@ -20,6 +21,7 @@ class Footer extends Component {
 
     return (
       <footer>
+        <Blob />
         <canvas id="my-wave" width="1920" height="888" />
         <div className="row" id="front-content">
           <div className="social-container">

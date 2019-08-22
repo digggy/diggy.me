@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Nav, NavItem, NavLink } from "shards-react";
+import Blob from "./mini-components/Blob";
 class Header extends Component {
   render() {
     const { data } = this.props;
