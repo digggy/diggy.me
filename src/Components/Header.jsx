@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Nav, NavItem, NavLink } from "shards-react";
-import Blob from "./mini-components/Blob";
 class Header extends Component {
   render() {
     const { data } = this.props;
@@ -15,7 +14,7 @@ class Header extends Component {
           <Nav fill className="nav-container">
             <NavItem className="current">
               <NavLink className="smoothscroll" href="#home">
-                Home
+                {/* <h6>Home</h6> */}
               </NavLink>
             </NavItem>
             <NavItem>
@@ -45,8 +44,10 @@ class Header extends Component {
             </NavItem>
           </Nav>
         </div>
+        
         <div className="row banner">
           <div className="header-section-inner">
+          {/* <Blob/> */}
             <h1 className="responsive-headline">I'm {name}</h1>
             <h2>
               <strong>{tagline}</strong>

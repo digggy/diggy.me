@@ -32,8 +32,8 @@ class Contact extends Component {
         </div>
         <div>
           <Container>
-            <Row>
-              <Col>
+            <Row >
+              <Col lg="7" sm="12" className="p-5">
                 <Form
                   action=""
                   method="post"
@@ -118,7 +118,7 @@ class Contact extends Component {
                 </div>
               </Col>
 
-              <Col>
+              <Col lg="5" sm="12" className="card items p-5">
                 <aside className="four columns footer-widgets">
                   <div className="widget widget_contact">
                     <h4>Address and Phone</h4>

@@ -4,6 +4,7 @@
   "homepage": "http://digggy.github.io/diggy.me/",
   "private": true,
   "dependencies": {
+    "compass-mixins": "^0.12.10",
     "jquery": "^3.2.1",
     "node-sass": "^4.12.0",
     "react": "^16.2.0",

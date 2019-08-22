@@ -1,4 +1,5 @@
 @import "./global/global";
+@import"./mini-components/blob.scss";
 @import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
 
 .responsive-headline {
@@ -37,10 +38,13 @@ h2 {
   width: 40%;
 }
 .header-selction {
-  background-color: $main-background-color;
+  // background-color: $main-background-color;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .nav-container {
-  padding: 3vh;
+  // padding: 3vh;
   width: 60%;
   margin: auto;
 }

@@ -21,7 +21,6 @@ class Footer extends Component {
 
     return (
       <footer>
-        <Blob />
         <canvas id="my-wave" width="1920" height="888" />
         <div className="row" id="front-content">
           <div className="social-container">

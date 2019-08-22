@@ -7,7 +7,7 @@ class Blob extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className="my-blob">
         <div class="glowy-blob">
           <div />
           <div />
@@ -43,7 +43,7 @@ class Blob extends Component {
             </filter>
           </defs>
         </svg>
-      </React.Fragment>
+      </div>
     );
   }
 }
