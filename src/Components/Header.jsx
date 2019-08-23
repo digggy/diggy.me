@@ -12,32 +12,32 @@ class Header extends Component {
       <header>
         <div className="header-selction">
           <Nav fill className="nav-container">
-            <NavItem className="current">
+            <NavItem className="current col-sm-12 col-lg-2">
               <NavLink className="smoothscroll" href="#home">
                 Home
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="col-sm-12 col-lg-2">
               <NavLink className="smoothscroll" href="#about">
                 About
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="col-sm-12 col-lg-2">
               <NavLink className="smoothscroll" href="#resume">
                 Resume
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="col-sm-12 col-lg-2">
               <NavLink className="smoothscroll" href="#portfolio">
                 Works
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="col-sm-12 col-lg-2">
               <NavLink className="smoothscroll" href="#testimonials">
                 Testimonials
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className="col-sm-12 col-lg-2">
               <NavLink className="smoothscroll" href="#contact">
                 Contact
               </NavLink>

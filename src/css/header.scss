@@ -35,20 +35,34 @@ h2 {
 */
 
 .header-section-inner {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  transform: translate(-60%, -60%);
+  display: block;
+  position: relative;
+  left: 18%;
   width: 40%;
+  padding-top: 10vh;
+  // transform: translate(-60%, -60%);
 }
 .header-selction {
   background-color: $main-background-color;
-  position: absolute;
   top: 0;
   width: 100%;
 }
+
+/*
+!! Important
+Handling for responsiveness of the website
+*/
+@media only screen and (max-width: 1026px) {
+  .nav-container {
+    display: none;
+  }
+  #about,
+  #resume {
+    padding: 0px 8vw;
+  }
+}
+
 .nav-container {
-  // padding: 3vh;
   width: 70%;
   margin: auto;
   font-size: 1.2rem;
@@ -57,10 +71,11 @@ h2 {
 .current {
   // height: 50px;
   background-color: $blueLight;
+  padding-bottom: 1%;
   border-radius: 0px 0px 45% 45%;
   z-index: 0;
   a {
     color: white !important;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 }
