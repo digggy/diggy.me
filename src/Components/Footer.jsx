@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { runWaves } from "../js/waves.js";
-import Blob from "./mini-components/Blob";
+// import Blob from "./Mini-Components/Blob.jsx";
 
 class Footer extends Component {
   componentDidMount() {

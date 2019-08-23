@@ -1,6 +1,10 @@
 @import "./global/global";
-@import"./mini-components/blob.scss";
+@import "./mini-components/blob.scss";
 @import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
+
+/*
+Nav Items and the navigation bar
+*/
 
 .responsive-headline {
   color: black;
@@ -38,13 +42,25 @@ h2 {
   width: 40%;
 }
 .header-selction {
-  // background-color: $main-background-color;
+  background-color: $main-background-color;
   position: absolute;
   top: 0;
   width: 100%;
 }
 .nav-container {
   // padding: 3vh;
-  width: 60%;
+  width: 70%;
   margin: auto;
+  font-size: 1.2rem;
+}
+
+.current {
+  // height: 50px;
+  background-color: $blueLight;
+  border-radius: 0px 0px 45% 45%;
+  z-index: 0;
+  a {
+    color: white !important;
+    font-size: 1.1rem;
+  }
 }

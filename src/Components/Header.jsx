@@ -14,7 +14,7 @@ class Header extends Component {
           <Nav fill className="nav-container">
             <NavItem className="current">
               <NavLink className="smoothscroll" href="#home">
-                {/* <h6>Home</h6> */}
+                Home
               </NavLink>
             </NavItem>
             <NavItem>
@@ -44,10 +44,10 @@ class Header extends Component {
             </NavItem>
           </Nav>
         </div>
-        
+
         <div className="row banner">
           <div className="header-section-inner">
-          {/* <Blob/> */}
+            {/* <Blob/> */}
             <h1 className="responsive-headline">I'm {name}</h1>
             <h2>
               <strong>{tagline}</strong>

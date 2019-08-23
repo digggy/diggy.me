@@ -63,7 +63,8 @@ export function runWaves(backgroundColor) {
         l = a.getContext("2d");
     var c = window.innerWidth,
       u = window.innerHeight,
-      d = ["#1E60FF", "#1180FF", "#ecf0f1", "##1E90FF", "#bcc0c0", "#ecf0f1"],
+      d = ["#1E60FF", "#1180FF", "#ecf0f1", "#1E90FF", "#ffffff", "#ffffff"],
+      // d = ["#1E60FF", "#1180FF", "#ecf0f1", "#1E90FF", "#bcc0c0", "#ecf0f1"],
       p = (function(t, n, i) {
         for (var o = [], r = 0; r < t; r += 1) {
           for (var s = [], a = 0, l = 0; l <= c + c / 4; l += i) {

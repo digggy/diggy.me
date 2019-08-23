@@ -9,7 +9,24 @@ import {
   Row,
   Col
 } from "shards-react";
+const API_PATH = "http://localhost:3000/inc/send-mail.php";
+
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      subject: "",
+      email: "",
+      message: ""
+    };
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
+  }
+  handleFormSubmit(event) {
+    event.preventDefault();
+    console.log(this.state);
+  }
+
   render() {
     if (this.props.data) {
       var name = this.props.data.name;
@@ -23,7 +40,7 @@ class Contact extends Component {
     }
 
     return (
-      <section>
+      <section id="contact">
         <div className="contact-header">
           <h1>
             <span>Get In Touch.</span>
@@ -32,7 +49,7 @@ class Contact extends Component {
         </div>
         <div>
           <Container>
-            <Row >
+            <Row>
               <Col lg="7" sm="12" className="p-5">
                 <Form
                   action=""
@@ -53,7 +70,7 @@ class Contact extends Component {
                         size="35"
                         id="contactName"
                         name="contactName"
-                        onChange={this.handleChange}
+                        onChange={e => this.setState({ name: e.target.value })}
                       />
                     </div>
 
@@ -68,7 +85,9 @@ class Contact extends Component {
                           size="35"
                           id="contactEmail"
                           name="contactEmail"
-                          onChange={this.handleChange}
+                          onChange={e =>
+                            this.setState({ email: e.target.value })
+                          }
                         />
                       </FormGroup>
                     </div>
@@ -82,7 +101,9 @@ class Contact extends Component {
                           size="35"
                           id="contactSubject"
                           name="contactSubject"
-                          onChange={this.handleChange}
+                          onChange={e =>
+                            this.setState({ subject: e.target.value })
+                          }
                         />
                       </FormGroup>
                     </div>
@@ -97,12 +118,21 @@ class Contact extends Component {
                           rows="15"
                           id="contactMessage"
                           name="contactMessage"
+                          onChange={e =>
+                            this.setState({ message: e.target.value })
+                          }
                         />
                       </FormGroup>
                     </div>
 
                     <div>
-                      <Button className="submit">Submit</Button>
+                      <Button
+                        className="submit"
+                        onClick={e => this.handleFormSubmit(e)}
+                      >
+                        {" "}
+                        Submit
+                      </Button>
                       <span id="image-loader">
                         <img alt="" src="images/loader.gif" />
                       </span>

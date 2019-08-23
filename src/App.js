@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import ReactGA from "react-ga";
-import $ from "jquery";
+import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
 import "./App.scss";
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import About from "./components/About.jsx";
-import Resume from "./components/Resume.jsx";
-import Contact from "./components/Contact.jsx";
-import Testimonials from "./components/Testimonials.jsx";
-import Portfolio from "./components/Portfolio.jsx";
+import Header from "./Components/Header.jsx";
+import Footer from "./Components/Footer.jsx";
+import About from "./Components/About.jsx";
+import Resume from "./Components/Resume.jsx";
+import Contact from "./Components/Contact.jsx";
+import Testimonials from "./Components/Testimonials.jsx";
+import Portfolio from "./Components/Portfolio.jsx";
 
 class App extends Component {
   constructor(props) {
@@ -25,21 +25,18 @@ class App extends Component {
   }
 
   getResumeData() {
-    $.ajax({
-      url: "/resumeData.json",
-      dataType: "json",
-      cache: false,
-      success: function(data) {
+    axios
+      .get("/resumeData.json")
+      .then(({ data }) => {
         this.setState({ resumeData: data });
-      }.bind(this),
-      error: function(xhr, status, err) {
+      })
+      .catch(err => {
         console.log(err);
         alert(err);
-      }
-    });
+      });
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.getResumeData();
   }
 

@@ -1,5 +1,5 @@
 @import "./global/global.scss";
-@import"./mini-components/blob.scss";
+@import "./mini-components/blob.scss";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 .social-container {
   max-width: 600px;
@@ -59,7 +59,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  bottom: -5%;
+  bottom: 0%;
 }
 #front-content {
   z-index: 1;
