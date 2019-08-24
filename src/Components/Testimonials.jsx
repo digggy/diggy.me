@@ -23,7 +23,9 @@ class Testimonials extends Component {
           <div className="row">
             <div className="two columns header-col">
               <h1>
-                <span>Testimonials</span>
+                <span>Testimonials 
+                  <hr className="center"/>
+                </span>
               </h1>
             </div>
 

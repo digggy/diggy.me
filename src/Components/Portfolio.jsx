@@ -59,7 +59,12 @@ class Portfolio extends Component {
 
     return (
       <React.Fragment>
-        <h1 className="text-center">Check Out Some of My Works</h1>
+        <h1 className="text-center">
+          <span className="titles">
+            Check Out Some of My Works
+        <hr className="center"/>
+        </span>
+        </h1>
         <Container id="portfolio" style={{ "max-width": "1240px" }}>
           <div className="row">
             <div className="flex-row">{projects}</div>

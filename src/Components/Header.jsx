@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Nav, NavItem, NavLink } from "shards-react";
+import Toggle from "./Mini-components/toggle.jsx";
+
 class Header extends Component {
   render() {
     const { data } = this.props;
@@ -43,8 +45,8 @@ class Header extends Component {
               </NavLink>
             </NavItem>
           </Nav>
+        <Toggle/>
         </div>
-
         <div className="row banner">
           <div className="header-section-inner">
             {/* <Blob/> */}

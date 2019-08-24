@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Badge } from "shards-react";
-import InstaStory from "./Mini-Components/InstaStory";
-
+import InstaStory from "./Mini-components/InstaStory";
 class Resume extends Component {
   render() {
     const { data } = this.props;
@@ -68,14 +67,19 @@ class Resume extends Component {
       <Container id="resume" style={{ "max-width": "1250px" }}>
         <Row>
           <Col lg="3" className="items-heading">
-            <h1>Education</h1>
+            <h1>
+              <span className="titles">
+                Education
+                <hr />
+              </span>
+            </h1>
           </Col>
           <Col lg="9">{education}</Col>
         </Row>
         <Row>
           <Col lg="3" className="items-heading">
             <h1>
-              <span>Work</span>
+              <span className="titles"> Work <hr/></span>
             </h1>
           </Col>
           <Col lg="9">

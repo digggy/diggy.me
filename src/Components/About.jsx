@@ -19,7 +19,7 @@ class About extends Component {
     return (
       <Container id="about" style={{ "max-width": "1400px" }}>
         <Row>
-          <div className="card flex-row items ">
+          <div className="card flex-row items py-5 brace">
             <Col sm="12" md="4" lg="3">
               <img
                 src={profilepic}
@@ -29,7 +29,11 @@ class About extends Component {
             </Col>
             <Col sm="12" md="4" lg="9">
               <div>
-                <h2>About Me</h2>
+                <h2 className=" underline--magical">
+                  <span className=" title">
+                  About Me
+                  </span>
+                  </h2>
 
                 <p>{bio}</p>
                 <Row>

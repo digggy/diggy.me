@@ -1,5 +1,7 @@
+@import "./global/global";
+
 body {
-  background: #f5f6f8;
+  background: $main-background-color;
   font-size: 15px;
   font-weight: 500;
 }
@@ -12,31 +14,18 @@ body {
   background-clip: initial;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  /* padding: 40px 20px; */
-}
-.card {
-  background-color: #fff;
+  background-color: $main-background-color;
   border: none;
   border-radius: 0.925rem;
-  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1),
+  box-shadow: 
+    0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1),
     0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1),
     0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12),
     0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
 }
 
 /*
-@brief
-Give a window effect to the the card
-*/
-/* .browser-mockup {
-  border-top: 2em solid rgba(230, 230, 230, 0.7);
-  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
-  position: relative;
-  border-radius: 3px 3px 0 0;
-} */
-
-/*
-flex derection of the contents of the row
+Flex derection of the contents of the row
 */
 .card .flex-row {
   flex-direction: row;
@@ -56,4 +45,34 @@ flex derection of the contents of the row
   width: 150px;
   height: 150px;
   border-radius: 25%;
+}
+
+/* Titles */
+hr {
+  margin-top:1vh;
+  margin-left:0; 
+  border: 0;
+  height: 4px;
+  
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from($blue),
+    to(#f14bf0)
+  );
+
+  background-image: linear-gradient(to right, $blueDarker, $blueLight);
+  border-radius: 9px;
+  width: 70%;
+  z-index: -1;
+  &.center{
+  margin-left:auto;     
+  }
+}
+
+span  {
+  &.titles{
+    display: inline-block;
+  }
 }
