@@ -13,6 +13,7 @@ class Header extends Component {
     return (
       <header>
         <div className="header-selction">
+        <Toggle className="toggle-dark"/>
           <Nav fill className="nav-container">
             <NavItem className="current col-sm-12 col-lg-2">
               <NavLink className="smoothscroll" href="#home">
@@ -45,7 +46,6 @@ class Header extends Component {
               </NavLink>
             </NavItem>
           </Nav>
-        <Toggle/>
         </div>
         <div className="row banner">
           <div className="header-section-inner">

@@ -23,7 +23,9 @@ class Toggle extends React.Component {
       <FormCheckbox
         toggle
         checked={this.state.checked}
-        onChange={this.handleChange}/>
+        onChange={this.handleChange}
+        className={this.props.className}
+        />
     );
   }
 }
