@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Nav, NavItem, NavLink } from "shards-react";
-import Toggle from "./Mini-components/toggle.jsx";
+import Toggle from "./Mini-Components/toggle.jsx";
 
 class Header extends Component {
   render() {
