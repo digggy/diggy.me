@@ -1,29 +1,39 @@
 import React from "react";
 import { FormCheckbox } from "shards-react";
-import _global from "../../css/global/_global.scss";
-
 class Toggle extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       checked: false,
-      className: ""
+      darkMode: {
+        "--main-background-color": "var(--dark-mode)",
+        "--card-background-color": "var(--dark-card)",
+        "--default-fontcolor": "var(--normal-mode)"
+      },
+      normalMode: {
+        "--main-background-color": "var(--normal-mode)",
+        "--card-background-color": "var(--normal-card)",
+        "--default-fontcolor": "var(--dark-card)"
+      }
     };
-
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange() {
-    if (!this.state.checked) {
+    const { checked, darkMode, normalMode } = this.state;
+    if (!checked) {
       this.setState({
-        checked: !this.state.checked,
-        className: "dark-mode"
+        checked: !checked
+      });
+      Object.keys(darkMode).forEach(key => {
+        document.documentElement.style.setProperty(key, darkMode[key]);
       });
     } else {
       this.setState({
-        checked: !this.state.checked,
-        className: "normal-mode"
+        checked: !checked
+      });
+      Object.keys(normalMode).forEach(key => {
+        document.documentElement.style.setProperty(key, normalMode[key]);
       });
     }
   }
@@ -31,11 +41,10 @@ class Toggle extends React.Component {
   render() {
     return (
       <FormCheckbox
-        className={this.state.className}
         toggle
         checked={this.state.checked}
         onChange={this.handleChange}
-        // className={this.props.className}
+        className={this.props.className}
       />
     );
   }

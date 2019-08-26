@@ -1,9 +1,19 @@
 @import "./css/global/global";
 :root {
-  --main-background-color: #{$dark-mode};
+  --dark-mode: #{$dark-mode};
+  --normal-mode: #{$normal-mode};
+  --dark-card: #{$dark-card};
+  --normal-card: #{$light-card};
+
+  --main-background-color: #{$normal-mode};
   --semi-background-color: #f5f6f8;
-  --card-background-color: #{$dark-card};
-  --default-fontcolor: #{$white};
+  --card-background-color: #{$light-card};
+  --default-fontcolor: #{$black};
+}
+.toggle-dark {
+  position: absolute;
+  top: 1vh;
+  right: 1vh;
 }
 @import "./css/common.scss";
 @import "./css/header.scss";

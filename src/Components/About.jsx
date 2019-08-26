@@ -30,10 +30,8 @@ class About extends Component {
             <Col sm="12" md="4" lg="9">
               <div>
                 <h2 className=" underline--magical">
-                  <span className=" title">
-                  About Me
-                  </span>
-                  </h2>
+                  <span className=" title">About Me</span>
+                </h2>
 
                 <p>{bio}</p>
                 <Row>

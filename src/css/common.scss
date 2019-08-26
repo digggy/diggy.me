@@ -2,7 +2,7 @@ body {
   background: var(--main-background-color);
   font-size: 15px;
   font-weight: 500;
-  color: $default-fontcolor;
+  color: var(--default-fontcolor);
 }
 
 .card {

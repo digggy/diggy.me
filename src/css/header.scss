@@ -42,7 +42,7 @@ h2 {
   // transform: translate(-60%, -60%);
 }
 .header-selction {
-  background-color: $main-background-color;
+  background-color: var(--main-background-color);
   top: 0;
   width: 100%;
 }
@@ -77,10 +77,4 @@ Handling for responsiveness of the website
     color: white !important;
     font-size: 1.4rem;
   }
-}
-
-.toggle-dark {
-  position: absolute;
-  top: 1vh;
-  right: 1vh;
 }

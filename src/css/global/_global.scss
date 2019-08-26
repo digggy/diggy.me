@@ -44,17 +44,3 @@ $main-background-color: $dark-mode;
 $semi-background-color: #f5f6f8;
 $card-background-color: $dark-card;
 $default-fontcolor: $white;
-
-.dark-mode {
-  $main-background-color: $dark-mode;
-  $semi-background-color: #f5f6f8;
-  $card-background-color: $dark-card;
-  $default-fontcolor: $white;
-}
-
-.normal-mode {
-  $main-background-color: $normal-mode;
-  $semi-background-color: #f5f6f8;
-  $card-background-color: $light-card;
-  $default-fontcolor: $white;
-}
