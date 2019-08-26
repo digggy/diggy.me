@@ -11,7 +11,7 @@ import Resume from "./Components/Resume.jsx";
 import Contact from "./Components/Contact.jsx";
 import Testimonials from "./Components/Testimonials.jsx";
 import Portfolio from "./Components/Portfolio.jsx";
-import Toggle from "./Components/Mini-Components/Toggle.jsx";
+import Toggle from "./Components/Mini-Components/toggle.jsx";
 
 class App extends Component {
   constructor(props) {
