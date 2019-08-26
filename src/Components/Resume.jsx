@@ -15,7 +15,7 @@ class Resume extends Component {
                 <InstaStory src={education.logo} />
               </Col>
               <Col lg="10">
-                <h3>{education.school}</h3>
+                <h3 className="dark">{education.school}</h3>
                 <p>
                   {education.degree}
                   <span>&bull;</span>
@@ -79,7 +79,10 @@ class Resume extends Component {
         <Row>
           <Col lg="3" className="items-heading">
             <h1>
-              <span className="titles"> Work <hr/></span>
+              <span className="titles">
+                {" "}
+                Work <hr />
+              </span>
             </h1>
           </Col>
           <Col lg="9">

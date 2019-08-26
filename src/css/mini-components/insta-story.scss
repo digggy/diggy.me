@@ -2,6 +2,7 @@
   position: relative;
   width: 120px;
   height: 120px;
+  // background-color: white;
 }
 
 .circle img {
@@ -9,8 +10,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 70px;
-  /* border-radius:50%; */
+  width: 75px;
+  border-radius: 50%;
 }
 .circle svg {
   fill: none;

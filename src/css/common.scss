@@ -1,10 +1,8 @@
-@import "./global/global";
-
 body {
-  background: $main-background-color;
+  background: var(--main-background-color);
   font-size: 15px;
   font-weight: 500;
- color:$default-fontcolor;
+  color: $default-fontcolor;
 }
 
 .card {
@@ -15,11 +13,10 @@ body {
   background-clip: initial;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  background-color: $main-background-color;
+  background-color: var(--card-background-color);
   border: none;
   border-radius: 0.925rem;
-  box-shadow: 
-    0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1),
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1),
     0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1),
     0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12),
     0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
@@ -50,11 +47,11 @@ Flex derection of the contents of the row
 
 /* Titles */
 hr {
-  margin-top:1vh;
-  margin-left:0; 
+  margin-top: 1vh;
+  margin-left: 0;
   border: 0;
   height: 4px;
-  
+
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -67,13 +64,20 @@ hr {
   border-radius: 9px;
   width: 70%;
   z-index: -1;
-  &.center{
-  margin-left:auto;     
+  &.center {
+    margin-left: auto;
   }
 }
 
-span  {
-  &.titles{
+span {
+  &.titles {
     display: inline-block;
   }
+}
+
+h3.dark {
+  // text-transform: uppercase;
+  background: linear-gradient(to right, $blueDarker 0%, $blueLight 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

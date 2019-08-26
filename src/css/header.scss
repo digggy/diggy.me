@@ -1,4 +1,3 @@
-@import "./global/global";
 @import "./mini-components/blob.scss";
 @import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
 
@@ -80,8 +79,8 @@ Handling for responsiveness of the website
   }
 }
 
-.toggle-dark{
+.toggle-dark {
   position: absolute;
-  top:1vh;
-  right:1vh;
+  top: 1vh;
+  right: 1vh;
 }

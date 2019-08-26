@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Nav, NavItem, NavLink } from "shards-react";
-import Toggle from "./Mini-Components/toggle.jsx";
+import Toggle from "./Mini-Components/Toggle.jsx";
 
 class Header extends Component {
   render() {
@@ -13,7 +13,6 @@ class Header extends Component {
     return (
       <header>
         <div className="header-selction">
-        <Toggle className="toggle-dark"/>
           <Nav fill className="nav-container">
             <NavItem className="current col-sm-12 col-lg-2">
               <NavLink className="smoothscroll" href="#home">

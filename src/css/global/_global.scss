@@ -31,17 +31,30 @@ $redLight: #cf2e77;
 $redLighter: #df7397;
 $redLightest: #f8d417;
 
+$dark-mode: #131418;
+$normal-mode: #ffffff;
 
+$dark-card: #13141f;
+$light-card: #ffffff;
 
-$dark-mode:#131418;
-$normal-mode:#ffffff;
+$white: #ffffff;
+$black: #000000;
 
-
-$dark-card:#13141f;
-
-$white:#ffffff;
-$black:#000000;
-
-$main-background-color:$normal-mode;
+$main-background-color: $dark-mode;
 $semi-background-color: #f5f6f8;
-$default-fontcolor:$black;
+$card-background-color: $dark-card;
+$default-fontcolor: $white;
+
+.dark-mode {
+  $main-background-color: $dark-mode;
+  $semi-background-color: #f5f6f8;
+  $card-background-color: $dark-card;
+  $default-fontcolor: $white;
+}
+
+.normal-mode {
+  $main-background-color: $normal-mode;
+  $semi-background-color: #f5f6f8;
+  $card-background-color: $light-card;
+  $default-fontcolor: $white;
+}

@@ -1,3 +1,10 @@
+@import "./css/global/global";
+:root {
+  --main-background-color: #{$dark-mode};
+  --semi-background-color: #f5f6f8;
+  --card-background-color: #{$dark-card};
+  --default-fontcolor: #{$white};
+}
 @import "./css/common.scss";
 @import "./css/header.scss";
 @import "./css/footer.scss";
