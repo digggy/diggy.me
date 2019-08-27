@@ -1,5 +1,8 @@
 import React from "react";
 import { FormCheckbox } from "shards-react";
+import { setThemeDark } from "../../redux/actions/index.js";
+import { connect } from "react-redux";
+
 class Toggle extends React.Component {
   constructor(props) {
     super(props);
@@ -36,6 +39,7 @@ class Toggle extends React.Component {
         document.documentElement.style.setProperty(key, normalMode[key]);
       });
     }
+    this.props.setThemeDark(this.state.checked);
   }
 
   render() {
@@ -50,4 +54,11 @@ class Toggle extends React.Component {
   }
 }
 
-export default Toggle;
+const mapStateToProps = state => ({
+  ...state
+});
+
+export default connect(
+  mapStateToProps,
+  { setThemeDark }
+)(Toggle);
