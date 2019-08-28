@@ -32,7 +32,7 @@ class Portfolio extends Component {
                     <img
                       alt={projects.title}
                       src={projectImage}
-                      style={{ width: "350px", height: "230px" }}
+                      style={{ width: "345px", height: "230px" }}
                       className={"img"}
                     />
                     <CardBody>
