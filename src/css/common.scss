@@ -69,15 +69,14 @@ hr {
   }
 }
 
-span {
-  &.titles {
-    display: inline-block;
-  }
+.titles {
+  display: inline-block;
+  color: var(--default-titles);
 }
 
 h3.dark {
   // text-transform: uppercase;
-  background: linear-gradient(to right, $blueDarker 0%, $blueLight 100%);
+  background: linear-gradient(to right, $blueDark 0%, $blueLight 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

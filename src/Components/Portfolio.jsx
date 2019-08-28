@@ -14,17 +14,17 @@ class Portfolio extends Component {
   render() {
     const { data } = this.props;
     if (data) {
-      var projects = data.projects.map(projects => {
+      var projects = data.projects.map((projects, index) => {
         var projectImage = "images/portfolio/" + projects.image;
         return (
-          <Card style={{ maxWidth: "350px", margin: "0.5rem" }}>
+          <Card key={index} style={{ maxWidth: "350px", margin: "0.5rem" }}>
             <div key={projects.title} className="columns portfolio-item">
               <div className="item-wrap">
                 <a href={projects.url} title={projects.title}>
                   <div className="portfolio-item-meta">
                     <CardHeader
                       className="browser-mockup"
-                      style={{ "text-align": "right" }}
+                      style={{ textAlign: "right" }}
                     >
                       {" "}
                       🏆 Featured{" "}
@@ -62,10 +62,10 @@ class Portfolio extends Component {
         <h1 className="text-center">
           <span className="titles">
             Check Out Some of My Works
-        <hr className="center"/>
-        </span>
+            <hr className="center" />
+          </span>
         </h1>
-        <Container id="portfolio" style={{ "max-width": "1240px" }}>
+        <Container id="portfolio" style={{ maxWidth: "1240px" }}>
           <div className="row">
             <div className="flex-row">{projects}</div>
           </div>

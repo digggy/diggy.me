@@ -1,10 +1,18 @@
 import React, { Component } from "react";
 import { runWaves } from "../js/waves.js";
 // import Blob from "./Mini-Components/Blob.jsx";
+import { connect } from "react-redux";
 
 class Footer extends Component {
   componentDidMount() {
     runWaves("#ffffff");
+  }
+  componentDidUpdate() {
+    if (this.props.darkMode === true) {
+      runWaves("#131418");
+    } else {
+      runWaves("#ffffff");
+    }
   }
   render() {
     if (this.props.data) {
@@ -45,5 +53,12 @@ class Footer extends Component {
     );
   }
 }
-
-export default Footer;
+function mapStateToProps(state) {
+  return {
+    darkMode: state.setTheme.darktheme
+  };
+}
+export default connect(
+  mapStateToProps,
+  null
+)(Footer);

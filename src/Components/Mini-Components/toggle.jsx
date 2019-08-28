@@ -11,17 +11,19 @@ class Toggle extends React.Component {
       darkMode: {
         "--main-background-color": "var(--dark-mode)",
         "--card-background-color": "var(--dark-card)",
-        "--default-fontcolor": "var(--normal-mode)"
+        "--default-fontcolor": "var(--normal-mode)",
+        "--default-titles": "var(--normal-mode)"
       },
       normalMode: {
         "--main-background-color": "var(--normal-mode)",
         "--card-background-color": "var(--normal-card)",
-        "--default-fontcolor": "var(--dark-card)"
+        "--default-fontcolor": "var(--dark-card)",
+        "--default-titles": "var(--dark-card)"
       }
     };
     this.handleChange = this.handleChange.bind(this);
+    this.props.setThemeDark(false);
   }
-
   handleChange() {
     const { checked, darkMode, normalMode } = this.state;
     if (!checked) {
@@ -39,7 +41,7 @@ class Toggle extends React.Component {
         document.documentElement.style.setProperty(key, normalMode[key]);
       });
     }
-    this.props.setThemeDark(this.state.checked);
+    this.props.setThemeDark(!this.state.checked);
   }
 
   render() {

@@ -36,7 +36,7 @@ class Resume extends Component {
                 <InstaStory src={work.logo} />
               </Col>
               <Col>
-                <h3>{work.company}</h3>
+                <h3 className="dark">{work.company}</h3>
                 <p>
                   {work.title}
                   <span>&bull;</span>
@@ -52,19 +52,17 @@ class Resume extends Component {
       var skills = data.skills.map(skills => {
         var className = "bar-expand " + skills.name.toLowerCase();
         return (
-          <React.Fragment>
-            <Badge key={skills.name}>
-              <span style={{ width: skills.level }} className={className} />
-              <em>{skills.name}</em>
-            </Badge>
-          </React.Fragment>
+          <Badge key={skills.name}>
+            <span style={{ width: skills.level }} className={className} />
+            <em>{skills.name}</em>
+          </Badge>
         );
       });
     }
 
     return (
       //style={{ "max-width": "60%" }}
-      <Container id="resume" style={{ "max-width": "1250px" }}>
+      <Container id="resume" style={{ maxWidth: "1250px" }}>
         <Row>
           <Col lg="3" className="items-heading">
             <h1>
@@ -81,7 +79,8 @@ class Resume extends Component {
             <h1>
               <span className="titles">
                 {" "}
-                Work <hr />
+                Work
+                <hr />
               </span>
             </h1>
           </Col>

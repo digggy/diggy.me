@@ -43,7 +43,7 @@ class Contact extends Component {
       <section id="contact">
         <div className="contact-header">
           <h1>
-            <span>Get In Touch.</span>
+            <span className="titles">Get In Touch.</span>
           </h1>
           <p>{message}</p>
         </div>
