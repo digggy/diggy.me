@@ -180,12 +180,20 @@
   "testimonials": {
     "testimonials": [
       {
-        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user": "Kareem Abdul Jabbar"
+        "message": "He was one of the company builders at BES Nepal.",
+        "text": "We've worked together on every type of project - including major marketing initiatives,graphic identity programs, logo and letterhead designs, web sites, brochures, signage programs,invitations, e-communications, online/print newsletters, Power-Point presentations, Merchandisedesign, and more.",
+        "user": "Dipin BK",
+        "company": "Budhanilkantha Education Services",
+        "designation": "CEO",
+        "image": "BES-CEO.jpg"
       },
       {
-        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user": "Steve Wozniak... impersonator"
+        "message": "He played a key role in planning, creating and managing visual content for our clients.",
+        "text": "His ability to priorities tasks, as well as effectively implement constructive feedback in his work speaks to his organizational skills, willingness to learn, and leadership potential.",
+        "user": "Menuka Gurung ",
+        "company": "Branditude Nepal",
+        "designation": "Assistant-Manger",
+        "image": "Branditude-manager.jpg"
       }
     ]
   }

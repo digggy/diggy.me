@@ -58,7 +58,7 @@ class Portfolio extends Component {
     }
 
     return (
-      <React.Fragment>
+      <section id="my-portfolio">
         <h1 className="text-center">
           <span className="titles">
             Check Out Some of My Works
@@ -70,7 +70,7 @@ class Portfolio extends Component {
             <div className="flex-row">{projects}</div>
           </div>
         </Container>
-      </React.Fragment>
+      </section>
     );
   }
 }

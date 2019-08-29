@@ -8,6 +8,7 @@
     "compass-mixins": "^0.12.10",
     "jquery": "^3.2.1",
     "node-sass": "^4.12.0",
+    "pure-react-carousel": "^1.21.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-ga": "^2.3.5",

@@ -33,13 +33,7 @@ class Footer extends Component {
           <div className="social-container">
             <ul className="social-icons">{networks}</ul>
 
-            <ul className="copyright">
-              &copy; Copyright 2019 Digdarshan Kunwar | Design by{" "}
-              <a title="Digdarshan Kunwar" href="">
-                {" "}
-                Digdarshan Kunwar
-              </a>
-            </ul>
+            <ul className="copyright">Made with ❤️ by Digdarshan Kunwar</ul>
           </div>
 
           <div id="go-top">
