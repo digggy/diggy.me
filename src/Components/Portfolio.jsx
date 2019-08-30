@@ -27,7 +27,7 @@ class Portfolio extends Component {
                       style={{ textAlign: "right" }}
                     >
                       {" "}
-                      🏆 Featured{" "}
+                      {projects.tag}{" "}
                     </CardHeader>
                     <img
                       alt={projects.title}
@@ -38,7 +38,7 @@ class Portfolio extends Component {
                     <CardBody>
                       <CardTitle style={{ height: "3rem" }}>
                         {" "}
-                        {projects.title}{" "}
+                        <span className="dark">{projects.title} </span>
                       </CardTitle>
                       <p>
                         {projects.category.description}

@@ -15,7 +15,7 @@ section {
   word-wrap: break-word;
   background-clip: initial;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.5rem;
+  border-radius: 1.2rem;
   background-color: var(--card-background-color);
   border: none;
   border: 3px solid rgba(30, 144, 255, 0.1);
@@ -80,9 +80,13 @@ hr {
   color: var(--default-titles);
 }
 
-h3.dark {
-  // text-transform: uppercase;
-  background: linear-gradient(to right, $blueDark 0%, $blueLight 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+h3,
+h4,
+span {
+  &.dark {
+    // text-transform: uppercase;
+    background: linear-gradient(to right, $blueDark 0%, $blueLight 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

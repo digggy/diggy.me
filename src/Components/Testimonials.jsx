@@ -17,14 +17,14 @@ function Review(props) {
           </Col>
           <Col lg="10" className="p-5">
             <span class="display-4 quotemark">❝</span>
-            <h4>{testimonials.message}</h4>
+            <h4 className="dark">{testimonials.message}</h4>
             {testimonials.text}
 
             <div className="user-info">
               <br />
               {testimonials.user}
               <div>
-                {testimonials.designation} :{testimonials.company}
+                {testimonials.designation} : {testimonials.company}
               </div>
             </div>
           </Col>

@@ -136,65 +136,58 @@ class Contact extends Component {
                         {" "}
                         Submit
                       </Button>
-                      <span id="image-loader">
-                        <img alt="" src="images/loader.gif" />
-                      </span>
                     </div>
                   </fieldset>
                 </Form>
-
-                <div id="message-warning"> Error boy</div>
+                {/* <div id="message-warning"> Error the message couldnt be processed.</div>
                 <div id="message-success">
                   <i className="fa fa-check" />
                   Your message was sent, thank you!
                   <br />
-                </div>
+                </div> */}
               </Col>
 
               <Col lg="5" sm="12" className="card items p-5">
-                <aside className="four columns footer-widgets">
-                  <div className="widget widget_contact">
-                    <h4>Address and Phone</h4>
-                    <p className="address">
-                      {name}
-                      <br />
-                      {street} <br />
-                      {city}, {state} {zip}
-                      <br />
-                      <span>{phone}</span>
-                    </p>
-                  </div>
+                <div className="widget widget_contact">
+                  <h4 className="titles">
+                    <b>Address and Phone</b>
+                  </h4>
+                  <p className="address">
+                    {name}
+                    <br />
+                    {street} <br />
+                    {city}, {state} {zip}
+                    <br />
+                    <span>{phone}</span>
+                  </p>
+                </div>
 
-                  <div className="widget widget_tweets">
-                    <h4 className="widget-title">Latest Tweets</h4>
-                    <ul id="twitter">
-                      <li>
-                        <span>
-                          This is Photoshop's version of Lorem Ipsum. Proin
-                          gravida nibh vel velit auctor aliquet. Aenean
-                          sollicitudin, lorem quis bibendum auctor, nisi elit
-                          consequat ipsum
-                          <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b>
-                          <a href="#">2 Days Ago</a>
-                        </b>
-                      </li>
-                      <li>
-                        <span>
-                          Sed ut perspiciatis unde omnis iste natus error sit
-                          voluptatem accusantium doloremque laudantium, totam
-                          rem aperiam, eaque ipsa quae ab illo inventore
-                          veritatis et quasi
-                          <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b>
-                          <a href="#">3 Days Ago</a>
-                        </b>
-                      </li>
-                    </ul>
-                  </div>
-                </aside>
+                <div className="widget widget_tweets">
+                  <h4 className="titles">
+                    <b>Latest Blog Posts</b>
+                  </h4>
+                  <ul id="twitter">
+                    <li>
+                      <span>
+                        Do play they miss give so up. Words to up style of since
+                        world. We leaf to snug on no need. Way own uncommonly
+                        travelling now acceptance bed compliment solicitude.
+                        Dissimilar admiration so terminated no in contrasted it.
+                        Advantages entreaties mr he apartments do. Limits far
+                        yet turned highly repair parish talked six. Draw fond
+                        rank form nor the day eat.
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Do play they miss give so up. Words to up style of since
+                        world. We leaf to snug on no need. Way own
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </Col>
             </Row>
           </Container>

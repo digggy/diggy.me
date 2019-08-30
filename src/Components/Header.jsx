@@ -52,8 +52,10 @@ class Header extends Component {
             <h2>
               <strong>{tagline}</strong>
               <br />
-              <div className="location">
-                @ {city},{country}
+              <div>
+                <span className="location">
+                  @ {city},{country}
+                </span>
               </div>
             </h2>
           </div>

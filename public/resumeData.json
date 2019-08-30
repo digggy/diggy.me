@@ -57,7 +57,7 @@
     ]
   },
   "resume": {
-    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage": " These are the technologies that i have worked with",
     "education": [
       {
         "school": " Jacobs University",
@@ -125,6 +125,14 @@
       {
         "name": "MongoDB",
         "level": "80%"
+      },
+      {
+        "name": "Photoshop",
+        "level": "80%"
+      },
+      {
+        "name": "SVN",
+        "level": "80%"
       }
     ]
   },
@@ -132,6 +140,7 @@
     "projects": [
       {
         "title": "A Levels Guide",
+        "tag": "🏆 Featured",
         "category": {
           "description": "Making it possible for anyone, anywhere to make their life better through access to education.",
           "info": ""
@@ -141,6 +150,7 @@
       },
       {
         "title": "Budhanilkantha Education Services",
+        "tag": "🏆 Featured",
         "category": {
           "description": "A institution that me along with my high school friends co-founded before enrolling to college.",
           "info": ""
@@ -150,6 +160,7 @@
       },
       {
         "title": "Bijay Pun Magar",
+        "tag": "🏆 Featured",
         "category": {
           "description": "A Wordpress blog website I built for my friend in Nepal.",
           "info": "Deployed by Herokuapp."
@@ -159,6 +170,8 @@
       },
       {
         "title": "My Resume Website",
+        "tag": "🏆 Featured",
+
         "category": {
           "description": "My React based resume and portfolio website.",
           "info": "Deployed by Herokuapp."
@@ -168,6 +181,7 @@
       },
       {
         "title": "Design Portfolio",
+        "tag": "🏆 Featured",
         "category": {
           "description": "My former works on graphics design using Adobe Suite.",
           "info": "Provided by Google Drive."

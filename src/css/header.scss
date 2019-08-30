@@ -6,7 +6,7 @@ Nav Items and the navigation bar
 */
 
 .responsive-headline {
-  color: black;
+  color: var(--responsive-headline-color);
   font-size: 10vmin;
   line-height: 1;
   font-weight: bold;
@@ -26,6 +26,7 @@ h2 {
   }
   .location {
     font-size: 2rem;
+    background-color: var(--blue);
   }
 }
 

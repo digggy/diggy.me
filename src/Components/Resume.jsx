@@ -88,17 +88,17 @@ class Resume extends Component {
             <div>{work}</div>
           </Col>
         </Row>
-        <Row className="card items">
-          <h1>
-            <span>Skills</span>
-          </h1>
-          <div>
+        <div id="skills" className="card items flex-row">
+          <Col lg="4">
+            <h1 className="titles">Skills</h1>
+          </Col>
+          <Col lg="8">
             {skillmessage}
             <div>
               <ul>{skills}</ul>
             </div>
-          </div>
-        </Row>
+          </Col>
+        </div>
       </Container>
     );
   }
