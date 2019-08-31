@@ -42,7 +42,11 @@ class Resume extends Component {
                   <span>&bull;</span>
                   <em>{work.years}</em>
                 </p>
-                <p>{work.description}</p>
+                <p>
+                  {work.description.map(contribution => (
+                    <li>{contribution}</li>
+                  ))}
+                </p>
               </Col>
             </Row>
           </Container>
@@ -52,9 +56,9 @@ class Resume extends Component {
       var skills = data.skills.map(skills => {
         var className = "bar-expand " + skills.name.toLowerCase();
         return (
-          <Badge key={skills.name}>
+          <Badge key={skills.name} style={{"margin" : "3px"}}>
             <span style={{ width: skills.level }} className={className} />
-            <em>{skills.name}</em>
+            <span className="skill">{skills.name}</span>
           </Badge>
         );
       });

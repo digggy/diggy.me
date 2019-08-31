@@ -24,7 +24,7 @@ class Portfolio extends Component {
                   <div className="portfolio-item-meta">
                     <CardHeader
                       className="browser-mockup"
-                      style={{ textAlign: "right" }}
+                      style={{ textAlign: "center"}}
                     >
                       {" "}
                       {projects.tag}{" "}
@@ -32,7 +32,7 @@ class Portfolio extends Component {
                     <img
                       alt={projects.title}
                       src={projectImage}
-                      style={{ width: "345px", height: "230px" }}
+                      style={{ width: "348px", height: "230px" }}
                       className={"img"}
                     />
                     <CardBody>

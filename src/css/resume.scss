@@ -11,3 +11,17 @@
   width: 85%;
   margin-left: 15%;
 }
+
+.badge{
+  padding: 1vh;
+  font-size: 1rem;
+  background: linear-gradient(to right, $blueDarker 0%, $blueLight 100%);
+  &:hover{
+    background: linear-gradient(to right, $blueDarker 100%, $blueLight 100%);;
+  }
+}
+.resume{
+li {
+  list-style-type: circle;
+}
+}
