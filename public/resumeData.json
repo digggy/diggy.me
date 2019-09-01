@@ -175,7 +175,7 @@
           "description": "A Wordpress blog website I built for my friend in Nepal.",
           "info": "Deployed by Herokuapp."
         },
-        "image": "website-blog.png",
+        "image": "website-blog.PNG",
         "url": "http://bijaymagar17.com.np/"
       },
       {
@@ -196,7 +196,7 @@
           "description": "My former works on graphics design using Adobe Suite.",
           "info": "Provided by Google Drive."
         },
-        "image": "design-works.jpg",
+        "image": "design-works.JPG",
         "url": "#"
       }
     ]

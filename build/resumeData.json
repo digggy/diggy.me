@@ -4,6 +4,7 @@
     "occupation": "Student",
     "description": "I am a Computer Science major student at Jacobs University Bremen, passively looking for internship/job opportunities in Software and Web Development. I want to further develop my creative skills, technological expertise & innovative thoughts.",
     "image": "profilepic.png",
+    "tagline": "Werkstudent Software Developer",
     "bio": "I am a Front End developer with industry experience building websites and web applications. I specialize in JavaScript and have professional experience working with Python and React. I also have experience working with Vue, Wordpress and Express.Js.",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "kunwar.digdarshangmail.com",
@@ -12,10 +13,11 @@
       "street": "College Ring 3",
       "city": "Bremen",
       "state": "Bremen",
-      "zip": "29759"
+      "zip": "28759",
+      "country": "Germany"
     },
     "website": "diggy.me",
-    "resumedownload": "http://timbakerdev.com",
+    "resumedownload": "https://drive.google.com/open?id=0BzCnJ0RK7NSgN2l4VVYyOFZLNzZRb0pSOWthS0tGY3hEaVdB",
     "social": [
       {
         "name": "facebook",
@@ -55,39 +57,54 @@
     ]
   },
   "resume": {
-    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage": " These are the technologies that i have worked with",
     "education": [
       {
         "school": " Jacobs University",
+        "logo": "jacobs-university.jpeg",
         "degree": "BSc Computer Science",
         "graduated": "2018 - Present",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "description": "Currently pursuing a degree with Computer Science as a major. Also, am taking a few extra courses from Intelligent Mobile Systems."
       },
       {
         "school": "Budhanilkantha School",
+        "logo": "budhanilkantha-school.jpg",
         "degree": "A-Levels",
         "graduated": "September 2017",
-        "description": "Studied Physics, Chemistry & Further Mathematics (PCF)."
+        "description": "Studied A-Levels with the core focus on Physics, Chemistry & Further Mathematics (PCF)."
       }
     ],
     "work": [
       {
         "company": "Contact Software GmbH",
-        "title": "Workingstudent - Software Developer",
-        "years": "June 2019 - Present",
-        "description": "Optimize marketing campaigns, email marketing, social media and display and search advertising. Gained marketing and business analysis knowledge. Responsible for developing, implementing and managing marketing campaigns that promote a company and its services."
+        "logo": "contact-softwares.png",
+        "title": "Werk Student - Software Developer",
+        "years": "May 2019 - Present",
+        "description": [
+          "Maintain the platform codebase of softwares like Workspace, Database PLM, IOT and Elements.",
+          "Respond to Change Request/ Debug in the in-house development of new software interfaces.",
+          "Implement the new requested features within the cs.web codebase.",
+          "Collaborated in the in-house development of new software interfaces working with UI/UX teams."
+        ]
       },
       {
         "company": "Deep Web Solutions GmbH",
+        "logo": "deep-web-solutions.jpg",
         "title": "Intern Web Development",
         "years": "Jan 2019 - February 2019",
-        "description": " Learned to develop general themes and plugins for CMS like Wordpress. \n Learned to the basics of Vue.js and Laravel."
+        "description": ["Learned to develop general themes and plugins for CMS like Wordpress.",
+        "Learned to the basics of Vue.js and Laravel."]
       },
       {
         "company": "Budhanilkantha Education Services",
+        "logo": "BES-logo.png",
         "title": "Co-Founder / Digital Marketing Manager",
         "years": "September 2017 - September 2018",
-        "description": "Optimize marketing campaigns, email marketing, social media and display and search advertising. Gained marketing and business analysis knowledge. Responsible for developing, implementing and managing marketing campaigns that promote a company and its services."
+        "description": [
+          "Optimize marketing campaigns, email marketing, social media and display and search advertising.",
+          "Gained marketing and business analysis knowledge",
+          "Responsible for developing, implementing and managing marketing campaigns."
+        ]
       }
     ],
     "skills": [
@@ -118,6 +135,14 @@
       {
         "name": "MongoDB",
         "level": "80%"
+      },
+      {
+        "name": "Photoshop",
+        "level": "80%"
+      },
+      {
+        "name": "SVN",
+        "level": "80%"
       }
     ]
   },
@@ -125,32 +150,53 @@
     "projects": [
       {
         "title": "A Levels Guide",
-        "category": "Making it possible for anyone, anywhere to make their life better through access to education.",
+        "tag": "🔥 Featured",
+        "category": {
+          "description": "Making it possible for anyone, anywhere to make their life better through access to education.",
+          "info": ""
+        },
         "image": "alevels-guide-cover.jpg",
         "url": "https://www.facebook.com/alevelguide/lo"
       },
       {
         "title": "Budhanilkantha Education Services",
-        "category": "A institution that me along with my high school friends co-founded before enrolling to college.",
+        "tag": "🏆 Top",
+        "category": {
+          "description": "A institution that me along with my high school friends co-founded before enrolling to college.",
+          "info": ""
+        },
         "image": "BES -logo.png",
         "url": "https://bes-edu.com"
       },
       {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "original-thai-food.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+        "title": "Bijay Pun Magar",
+        "tag": "👏 Favourite",
+        "category": {
+          "description": "A Wordpress blog website I built for my friend in Nepal.",
+          "info": "Deployed by Herokuapp."
+        },
+        "image": "website-blog.PNG",
+        "url": "http://bijaymagar17.com.np/"
       },
       {
         "title": "My Resume Website",
-        "category": "My React based resume website",
+        "tag": " 💙 Recent",
+
+        "category": {
+          "description": "My React based resume and portfolio website.",
+          "info": "Deployed by Herokuapp."
+        },
         "image": "resume-website.jpg",
         "url": "#"
       },
       {
         "title": "Design Portfolio",
-        "category": "My Design Portfolio.",
-        "image": "smirkspace.jpg",
+        "tag": "🌟 Featured",
+        "category": {
+          "description": "My former works on graphics design using Adobe Suite.",
+          "info": "Provided by Google Drive."
+        },
+        "image": "design-works.JPG",
         "url": "#"
       }
     ]
@@ -158,12 +204,20 @@
   "testimonials": {
     "testimonials": [
       {
-        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user": "Kareem Abdul Jabbar"
+        "message": "He was one of the company builders at BES Nepal.",
+        "text": "We've worked together on every type of project - including major marketing initiatives,graphic identity programs, logo and letterhead designs, web sites, brochures, signage programs,invitations, e-communications, online/print newsletters, Power-Point presentations, Merchandisedesign, and more.",
+        "user": "Dipin BK",
+        "company": "Budhanilkantha Education Services",
+        "designation": "CEO",
+        "image": "BES-CEO.jpg"
       },
       {
-        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user": "Steve Wozniak... impersonator"
+        "message": "He played a key role in planning, creating and managing visual content for our clients.",
+        "text": "His ability to priorities tasks, as well as effectively implement constructive feedback in his work speaks to his organizational skills, willingness to learn, and leadership potential.",
+        "user": "Menuka Gurung ",
+        "company": "Branditude Nepal",
+        "designation": "Assistant-Manger",
+        "image": "Branditude-manager.jpg"
       }
     ]
   }
