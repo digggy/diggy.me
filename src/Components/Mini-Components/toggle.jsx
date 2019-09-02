@@ -28,6 +28,11 @@ class Toggle extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.props.setThemeDark(false);
   }
+  
+  componentWillMount(){
+    this.handleChange();
+  }
+
   handleChange() {
     const { checked, darkMode, normalMode } = this.state;
     if (!checked) {
