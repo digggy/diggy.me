@@ -7,21 +7,24 @@
 .items-heading {
   padding: 3rem 0rem;
 }
-#skills {
+#skills-section {
   width: 85%;
   margin-left: 15%;
+  & .skills {
+    text-align: center;
+  }
 }
 
-.badge{
+.badge {
   padding: 1vh;
   font-size: 1rem;
   background: linear-gradient(to right, $blueDarker 0%, $blueLight 100%);
-  &:hover{
-    background: linear-gradient(to right, $blueDarker 100%, $blueLight 100%);;
+  &:hover {
+    background: linear-gradient(to right, $blueDarker 100%, $blueLight 100%);
   }
 }
-.resume{
-li {
-  list-style-type: circle;
-}
+.resume {
+  li {
+    list-style-type: circle;
+  }
 }

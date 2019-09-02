@@ -13,14 +13,16 @@ class Toggle extends React.Component {
         "--card-background-color": "var(--dark-card)",
         "--default-fontcolor": "var(--normal-mode)",
         "--default-titles": "var(--normal-mode)",
-        "--responsive-headline-color": "var(--normal-mode)"
+        "--responsive-headline-color": "var(--normal-mode)",
+        "--default-border-shadow": "var(--black-background-bodershadow)"
       },
       normalMode: {
         "--main-background-color": "var(--normal-mode)",
         "--card-background-color": "var(--normal-card)",
         "--default-fontcolor": "var(--dark-card)",
         "--default-titles": "var(--dark-card)",
-        "--responsive-headline-color": "var(--dark-card)"
+        "--responsive-headline-color": "var(--dark-card)",
+        "--default-border-shadow": "var(--white-background-bodershadow)"
       }
     };
     this.handleChange = this.handleChange.bind(this);

@@ -5,8 +5,8 @@
     "description": "I am a Computer Science major student at Jacobs University Bremen, passively looking for internship/job opportunities in Software and Web Development. I want to further develop my creative skills, technological expertise & innovative thoughts.",
     "image": "profilepic.png",
     "tagline": "Werkstudent Software Developer",
-    "bio": "I am a Front End developer with industry experience building websites and web applications. I specialize in JavaScript and have professional experience working with Python and React. I also have experience working with Vue, Wordpress and Express.Js.",
-    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "bio": "I am a Front End developer with industry experience building websites and web applications. I specialize in JavaScript and have semi-professional experience working with Python and React. I also have experience working with Vue, Wordpress and Express.Js.",
+    "contactmessage": "Feel free to contact me using the social media links or the form below. I really look forward to hearing from you !",
     "email": "kunwar.digdarshangmail.com",
     "phone": "+49-15158335638",
     "address": {
@@ -92,8 +92,10 @@
         "logo": "deep-web-solutions.jpg",
         "title": "Intern Web Development",
         "years": "Jan 2019 - February 2019",
-        "description": ["Learned to develop general themes and plugins for CMS like Wordpress.",
-        "Learned to the basics of Vue.js and Laravel."]
+        "description": [
+          "Learned to develop general themes and plugins for CMS like Wordpress.",
+          "Learned to the basics of Vue.js and Laravel."
+        ]
       },
       {
         "company": "Budhanilkantha Education Services",
@@ -113,11 +115,11 @@
         "level": "60%"
       },
       {
-        "name": "Illustrator",
+        "name": "Adobe Illustrator",
         "level": "55%"
       },
       {
-        "name": "ReactJs",
+        "name": "React.Js",
         "level": "50%"
       },
       {
@@ -129,7 +131,7 @@
         "level": "80%"
       },
       {
-        "name": "VueJs",
+        "name": "Vue.Js",
         "level": "50%"
       },
       {
@@ -137,11 +139,39 @@
         "level": "80%"
       },
       {
-        "name": "Photoshop",
+        "name": "Adobe Photoshop",
         "level": "80%"
       },
       {
         "name": "SVN",
+        "level": "80%"
+      },
+      {
+        "name": "GitKraken",
+        "level": "80%"
+      },
+      {
+        "name": "Docker",
+        "level": "80%"
+      },
+      {
+        "name": "Python",
+        "level": "80%"
+      },
+      {
+        "name": "C/C++",
+        "level": "80%"
+      },
+      {
+        "name": "Node.Js",
+        "level": "80%"
+      },
+      {
+        "name": "Wordpress",
+        "level": "80%"
+      },
+      {
+        "name": "PHP",
         "level": "80%"
       }
     ]

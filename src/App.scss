@@ -5,12 +5,22 @@
   --dark-card: #{$dark-card};
   --normal-card: #{$light-card};
 
+  --white-background-bodershadow: 0 0.46875rem 1.1875rem rgba(90, 97, 105, 0.25),
+    0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.3),
+    0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12),
+    0 0.125rem 0.1875rem rgba(90, 97, 105, 0.2);
+
+  --black-background-bodershadow: 0 0.0875rem 0.7rem rgba(30, 144, 255, 0.4),
+    0 0.25rem 0.625rem rgba(0, 166, 255, 0.3),
+    0 0.2rem 1.93125rem rgba(0, 101, 162, 0.4), 0 0.025rem 1.075rem #5a61691a;
+
   --main-background-color: #{$normal-mode};
   --semi-background-color: #f5f6f8;
   --card-background-color: #{$light-card};
   --default-fontcolor: #{$black};
   --default-titles: #{$black};
   --responsive-headline-color: #{$black};
+  --default-border-shadow: var(--white-background-bodershadow);
 }
 .toggle-dark {
   position: absolute;
