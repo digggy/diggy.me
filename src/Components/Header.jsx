@@ -54,7 +54,7 @@ class Header extends Component {
               <br />
               <div>
                 <span className="location">
-                  @ {city},{country}
+                  @{city},{country}
                 </span>
               </div>
             </h2>

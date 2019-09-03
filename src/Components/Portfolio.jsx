@@ -3,7 +3,6 @@ import {
   Card,
   CardHeader,
   CardTitle,
-  CardImg,
   CardBody,
   CardFooter,
   Button,
@@ -24,7 +23,7 @@ class Portfolio extends Component {
                   <div className="portfolio-item-meta">
                     <CardHeader
                       className="browser-mockup"
-                      style={{ textAlign: "center"}}
+                      style={{ textAlign: "center" }}
                     >
                       {" "}
                       {projects.tag}{" "}
@@ -32,9 +31,9 @@ class Portfolio extends Component {
                     <img
                       alt={projects.title}
                       src={projectImage}
-                      style={{ width: "348px", height: "230px" }}
-                      className={"img"}
+                      className={"img img-container"}
                     />
+
                     <CardBody>
                       <CardTitle style={{ height: "3rem" }}>
                         {" "}

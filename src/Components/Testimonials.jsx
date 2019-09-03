@@ -6,16 +6,17 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 function Review(props) {
   const { testimonials, index } = props;
   return (
-    <li key={testimonials.user}>
+    <li key={index}>
       <Container>
         <Row>
-          <Col lg="2" className="pt-4">
+          <Col lg="2" sm="2" className="pt-4">
             <img
+              alt={testimonials.image}
               src={"images/testimonials/" + testimonials.image}
               className="testimonials-image"
             />
           </Col>
-          <Col lg="10" className="p-5">
+          <Col lg="10" sm="10" className="p-5">
             <span class="display-4 quotemark">❝</span>
             <h4 className="dark">{testimonials.message}</h4>
             {testimonials.text}

@@ -2,6 +2,12 @@
   background-size: cover;
   -webkit-background-size: cover;
 }
+.img-container {
+  width: 345px;
+  height: 230px;
+  display: block;
+  margin: 0 auto;
+}
 
 #portfolio {
   max-width: 80%;
@@ -11,6 +17,6 @@ a {
   color: var(--default-fontcolor);
 }
 
-.card-header{
+.card-header {
   // background: linear-gradient(to right, $blueDarker 0%, $blueLight 100%);
 }

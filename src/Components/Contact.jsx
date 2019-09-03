@@ -9,7 +9,6 @@ import {
   Row,
   Col
 } from "shards-react";
-const API_PATH = "http://localhost:3000/inc/send-mail.php";
 
 class Contact extends Component {
   constructor(props) {
@@ -35,7 +34,7 @@ class Contact extends Component {
       var state = this.props.data.address.state;
       var zip = this.props.data.address.zip;
       var phone = this.props.data.phone;
-      var email = this.props.data.email;
+      // var email = this.props.data.email;
       var message = this.props.data.contactmessage;
     }
 

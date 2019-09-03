@@ -30,6 +30,17 @@ h2 {
     border-radius: 8px;
     background-color: var(--blue);
   }
+  @media screen and (max-width: 600px) {
+    line-height: 1;
+    strong {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: red;
+    }
+    .location {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 /*
@@ -43,6 +54,10 @@ h2 {
   width: 40%;
   padding-top: 10vh;
   // transform: translate(-60%, -60%);
+  @media screen and (max-width: 600px) {
+    width: 80%;
+    padding-top: 20vh;
+  }
 }
 .header-selction {
   background-color: var(--main-background-color);

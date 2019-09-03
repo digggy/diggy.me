@@ -44,8 +44,8 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Toggle className="toggle-dark" />
         <div className="App normal-mode">
+          <Toggle className="toggle-dark" />
           <Header data={this.state.resumeData.main} />
           <About data={this.state.resumeData.main} />
           <Resume data={this.state.resumeData.resume} />

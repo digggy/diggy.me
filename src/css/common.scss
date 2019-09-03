@@ -1,3 +1,14 @@
+/*
+Reset the bootstrap styling to the costumized styling of my own
+*/
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/*
+General Styling for the page
+*/
 body {
   background: var(--main-background-color);
   font-size: 15px;
