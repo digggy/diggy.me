@@ -69,6 +69,7 @@ class Resume extends Component {
       <Container id="resume" style={{ maxWidth: "1250px" }}>
         <Row>
           <Col lg="3" className="items-heading">
+          <img src ="./images/icons/education.svg"className="my-icons"/>
             <h1>
               <span className="titles">
                 Education
@@ -80,6 +81,7 @@ class Resume extends Component {
         </Row>
         <Row>
           <Col lg="3" className="items-heading">
+          <img src ="./images/icons/work.svg" className="my-icons"/>
             <h1>
               <span className="titles">
                 {" "}
