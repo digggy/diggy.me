@@ -96,6 +96,7 @@ class Resume extends Component {
         </Row>
         <div id="skills-section" className="card items flex-row">
           <Col lg="4">
+          <img src ="./images/icons/skills.svg"className="my-icons"/>
             <h1 className="titles">Skills</h1>
           </Col>
           <Col lg="8">

@@ -9,11 +9,14 @@ Reset the bootstrap styling to the costumized styling of my own
 /*
 General Styling for the page
 */
+
 body {
   background: var(--main-background-color);
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--default-fontcolor);
+
+
 }
 
 section {

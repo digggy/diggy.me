@@ -23,9 +23,10 @@
   --default-border-shadow: var(--white-background-bodershadow);
 }
 .toggle-dark {
-  position: absolute;
+  // position: absolute;
   top: 1vh;
-  right: 5%;
+  float: right;
+  margin-right: 20px;
 }
 @import "./css/common.scss";
 @import "./css/header.scss";
