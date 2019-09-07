@@ -45,9 +45,8 @@ class Header extends Component {
             </NavItem>
           </Nav>
         </div>
-        <div className="row banner">
+        <div id= "header-content" className="row banner">
           <div className="header-section-inner">
-            {/* <Blob/> */}
             <h1 className="responsive-headline">I'm {name}</h1>
             <h2>
               <strong>{tagline}</strong>

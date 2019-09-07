@@ -1,8 +1,7 @@
 import React from "react";
-import { FormCheckbox } from "shards-react";
 import { setThemeDark } from "../../redux/actions/index.js";
 import { connect } from "react-redux";
-
+import NightButton from "./NightButton";
 class Toggle extends React.Component {
   constructor(props) {
     super(props);
@@ -23,7 +22,8 @@ class Toggle extends React.Component {
         "--default-titles": "var(--dark-card)",
         "--responsive-headline-color": "var(--dark-card)",
         "--default-border-shadow": "var(--white-background-bodershadow)"
-      }
+      },
+      className: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.props.setThemeDark(false);
@@ -37,14 +37,19 @@ class Toggle extends React.Component {
     const { checked, darkMode, normalMode } = this.state;
     if (!checked) {
       this.setState({
-        checked: !checked
+        checked: !checked,
+        className: this.props.className
       });
       Object.keys(darkMode).forEach(key => {
         document.documentElement.style.setProperty(key, darkMode[key]);
       });
+      
     } else {
+      // Developer note : Can use classNames from npm 
+      // currently just adding string 
       this.setState({
-        checked: !checked
+        checked: !checked,
+        className: this.props.className + " day"
       });
       Object.keys(normalMode).forEach(key => {
         document.documentElement.style.setProperty(key, normalMode[key]);
@@ -55,14 +60,10 @@ class Toggle extends React.Component {
 
   render() {
     return (
-      
-      <FormCheckbox
-        toggle
-        checked={this.state.checked}
-        onChange={this.handleChange}
-        className={this.props.className}
-      />
-
+    <NightButton
+        onClick={this.handleChange}
+        className={this.state.className}
+    />
     );
   }
 }

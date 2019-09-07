@@ -26,8 +26,10 @@
   // position: absolute;
   top: 1vh;
   float: right;
-  margin-right: 20px;
+  margin-right: 0%;
 }
+
+@import "./css/mini-components/togglebtn.scss";
 @import "./css/common.scss";
 @import "./css/header.scss";
 @import "./css/footer.scss";

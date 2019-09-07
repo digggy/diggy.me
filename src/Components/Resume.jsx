@@ -28,7 +28,7 @@ class Resume extends Component {
         </div>
       ));
 
-      var work = data.work.map(work => (
+      var work = data.work.map((work,index) => (
         <div key={work.company} className="card items flex-col">
           <Container>
             <Row>
@@ -43,8 +43,8 @@ class Resume extends Component {
                   <em>{work.years}</em>
                 </p>
                 <p>
-                  {work.description.map(contribution => (
-                    <li>{contribution}</li>
+                  {work.description.map((contribution,index) => (
+                    <li key={index}>{contribution}</li>
                   ))}
                 </p>
               </Col>

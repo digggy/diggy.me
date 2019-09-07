@@ -6,7 +6,6 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 function Review(props) {
   const { testimonials, index } = props;
   return (
-    <li key={index}>
       <Container>
         <Row>
           <Col lg="2" sm="2" className="pt-4">
@@ -17,7 +16,7 @@ function Review(props) {
             />
           </Col>
           <Col lg="10" sm="10" className="p-5">
-            <span class="display-4 quotemark">❝</span>
+            <span className="display-4 quotemark">❝</span>
             <h4 className="dark">{testimonials.message}</h4>
             {testimonials.text}
 
@@ -31,7 +30,6 @@ function Review(props) {
           </Col>
         </Row>
       </Container>
-    </li>
   );
 }
 
@@ -43,7 +41,7 @@ class Testimonials extends Component {
         index
       ) {
         return (
-          <Slide index={index}>
+          <Slide key={index}>
             <Review testimonials={testimonials} index={index} />{" "}
           </Slide>
         );
@@ -53,9 +51,9 @@ class Testimonials extends Component {
     return (
       <section id="testimonials">
         <Container>
-          <div class="contact-header">
+          <div className="contact-header">
             <h1>
-              <span class="titles">
+              <span className="titles">
                 Testimonials
                 <hr className="center" />
               </span>
