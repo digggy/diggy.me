@@ -11,7 +11,7 @@ class Header extends Component {
 
     return (
       <header>
-        <div className="header-selction">
+        <div className="header-selction" id="header-content">
           <Nav fill className="nav-container">
             <NavItem className="current col-sm-12 col-lg-2">
               <NavLink className="smoothscroll" href="#home">
@@ -45,7 +45,7 @@ class Header extends Component {
             </NavItem>
           </Nav>
         </div>
-        <div id= "header-content" className="row banner">
+        <div className="row banner">
           <div className="header-section-inner">
             <h1 className="responsive-headline">I'm {name}</h1>
             <h2>
