@@ -16,7 +16,6 @@
 * [Contact](#contact)
 
 ## About the Project
-<--![Project Screen Shot]()-->
 This is a ReactJS based personal resume website . The site is hosted at firebase @[diggy.me]("https://diggy.me").
 
 ### Built with
