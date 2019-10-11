@@ -8,6 +8,7 @@ import {
   Button,
   Container
 } from "shards-react";
+// import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 
 class Portfolio extends Component {
   render() {
@@ -37,7 +38,9 @@ class Portfolio extends Component {
                     <CardBody>
                       <CardTitle style={{ height: "3rem" }}>
                         {" "}
-                        <span className="dark">{projects.title} </span>
+                        <span className="dark">
+                          <b>{projects.title} </b>
+                        </span>
                       </CardTitle>
                       <p>
                         {projects.category.description}

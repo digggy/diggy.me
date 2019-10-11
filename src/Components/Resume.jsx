@@ -28,14 +28,14 @@ class Resume extends Component {
         </div>
       ));
 
-      var work = data.work.map((work,index) => (
+      var work = data.work.map((work, index) => (
         <div key={work.company} className="card items flex-col">
           <Container>
             <Row>
               <Col lg="2">
                 <InstaStory src={work.logo} />
               </Col>
-              <Col>
+              <Col style={{ paddingLeft: "5px" }}>
                 <h3 className="dark">{work.company}</h3>
                 <p>
                   {work.title}
@@ -43,7 +43,7 @@ class Resume extends Component {
                   <em>{work.years}</em>
                 </p>
                 <p>
-                  {work.description.map((contribution,index) => (
+                  {work.description.map((contribution, index) => (
                     <li key={index}>{contribution}</li>
                   ))}
                 </p>
@@ -69,7 +69,7 @@ class Resume extends Component {
       <Container id="resume" style={{ maxWidth: "1250px" }}>
         <Row>
           <Col lg="3" className="items-heading">
-          <img src ="./images/icons/education.svg"className="my-icons"/>
+            <img src="./images/icons/education.svg" className="my-icons" />
             <h1>
               <span className="titles">
                 Education
@@ -81,7 +81,7 @@ class Resume extends Component {
         </Row>
         <Row>
           <Col lg="3" className="items-heading">
-          <img src ="./images/icons/work.svg" className="my-icons"/>
+            <img src="./images/icons/work.svg" className="my-icons" />
             <h1>
               <span className="titles">
                 {" "}
@@ -96,7 +96,7 @@ class Resume extends Component {
         </Row>
         <div id="skills-section" className="card items flex-row">
           <Col lg="4">
-          <img src ="./images/icons/skills.svg"className="my-icons"/>
+            <img src="./images/icons/skills.svg" className="my-icons" />
             <h1 className="titles">Skills</h1>
           </Col>
           <Col lg="8">
