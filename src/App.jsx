@@ -12,12 +12,12 @@ import Contact from "./Components/Contact.jsx";
 import Testimonials from "./Components/Testimonials.jsx";
 import Portfolio from "./Components/Portfolio.jsx";
 import Toggle from "./Components/Mini-Components/toggle.jsx";
+// import Loader from "./Components/Mini-Components/Loader";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      foo: "bar",
       resumeData: {}
     };
 
@@ -42,9 +42,11 @@ class App extends Component {
   }
 
   render() {
+    
     return (
       <React.Fragment>
-        <div className="App normal-mode">
+        {this.state.resumeData ?
+          <div className="App normal-mode">
           <Toggle className="toggle-dark" />
           <Header data={this.state.resumeData.main} />
           <About data={this.state.resumeData.main} />
@@ -53,7 +55,8 @@ class App extends Component {
           <Testimonials data={this.state.resumeData.testimonials} />
           <Contact data={this.state.resumeData.main} />
           <Footer data={this.state.resumeData.main} />
-        </div>
+          </div>
+          : null }
       </React.Fragment>
     );
   }
